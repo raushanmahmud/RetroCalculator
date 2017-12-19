@@ -23,11 +23,15 @@ class ViewController: UIViewController {
         case Empty = "Empty"
     }
     
-    var currentOperation = Operation.Empty
-    var runningNumber = ""
-    var leftValStr = ""
-    var rightValStr = ""
-    var result = ""
+    var currentOperation: Operation!
+    
+    var runningNumber: String!
+    
+    var leftValStr: String!
+    
+    var rightValStr: String!
+    
+    var result: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,13 +46,17 @@ class ViewController: UIViewController {
             print(err.debugDescription)
         }
         
-        outputLbl.text = "0"
+        clear()
+        
     }
     
     @IBAction func numberPressed(sender: UIButton){
         playSound()
         
-        runningNumber += "\(sender.tag)"
+        if runningNumber == "0" {
+            runningNumber = ""
+        }
+        runningNumber! += "\(sender.tag)"
         outputLbl.text = runningNumber
         
     }
@@ -71,6 +79,12 @@ class ViewController: UIViewController {
     
     @IBAction func onEqualPressed(sender: AnyObject){
         processOperation(operation: currentOperation)
+        
+    }
+    
+    @IBAction func clearPressed(sender: AnyObject){
+        playSound()
+        clear()
     }
     
     func playSound(){
@@ -81,6 +95,15 @@ class ViewController: UIViewController {
         btnSound.play()
     }
     
+    func clear(){
+        currentOperation = Operation.Empty
+        runningNumber = "0"
+        leftValStr = ""
+        rightValStr = ""
+        result = ""
+        outputLbl.text = "0"
+    }
+    
     func processOperation(operation: Operation){
         playSound()
         if currentOperation != Operation.Empty {
@@ -89,7 +112,7 @@ class ViewController: UIViewController {
             if runningNumber != "" {
                 
                 rightValStr = runningNumber
-                runningNumber = ""
+                runningNumber = "0"
                 
                 if currentOperation == Operation.Multiply {
                     result = "\(Double(leftValStr)! * Double(rightValStr)!)"
@@ -117,7 +140,7 @@ class ViewController: UIViewController {
         } else {
             // This is the first time operator has been pressed
             leftValStr = runningNumber
-            runningNumber = ""
+            runningNumber = "0"
             currentOperation = operation
         }
     }
