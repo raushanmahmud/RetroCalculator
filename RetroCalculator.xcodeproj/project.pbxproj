@@ -14,6 +14,7 @@
 		2D2183AD1FE7FF6B0055979C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D2183AB1FE7FF6B0055979C /* LaunchScreen.storyboard */; };
 		2D2183B81FE7FF6B0055979C /* RetroCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2183B71FE7FF6B0055979C /* RetroCalculatorTests.swift */; };
 		2D2183C31FE7FF6C0055979C /* RetroCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2183C21FE7FF6C0055979C /* RetroCalculatorUITests.swift */; };
+		2DE62FFF1FE913B7007546E5 /* SantasSleighFull.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DE62FFE1FE913B7007546E5 /* SantasSleighFull.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2D2183BE1FE7FF6C0055979C /* RetroCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2183C21FE7FF6C0055979C /* RetroCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroCalculatorUITests.swift; sourceTree = "<group>"; };
 		2D2183C41FE7FF6C0055979C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE62FFE1FE913B7007546E5 /* SantasSleighFull.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SantasSleighFull.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				2D2183A61FE7FF6B0055979C /* Main.storyboard */,
 				2D2183A91FE7FF6B0055979C /* Assets.xcassets */,
 				2D2183AB1FE7FF6B0055979C /* LaunchScreen.storyboard */,
+				2DE62FFE1FE913B7007546E5 /* SantasSleighFull.ttf */,
 				2D2183AE1FE7FF6B0055979C /* Info.plist */,
 			);
 			path = RetroCalculator;
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D2183AD1FE7FF6B0055979C /* LaunchScreen.storyboard in Resources */,
+				2DE62FFF1FE913B7007546E5 /* SantasSleighFull.ttf in Resources */,
 				2D2183AA1FE7FF6B0055979C /* Assets.xcassets in Resources */,
 				2D2183A81FE7FF6B0055979C /* Main.storyboard in Resources */,
 			);
@@ -503,6 +507,7 @@
 				2D2183C91FE7FF6C0055979C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D2183CA1FE7FF6C0055979C /* Build configuration list for PBXNativeTarget "RetroCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				2D2183CC1FE7FF6C0055979C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D2183CD1FE7FF6C0055979C /* Build configuration list for PBXNativeTarget "RetroCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				2D2183CF1FE7FF6C0055979C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

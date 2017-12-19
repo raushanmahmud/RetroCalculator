@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SantasSleighFull.ttf">
+            <string>SantasSleighFull</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -31,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="UiU-jm-tSh">
-                                <rect key="frame" x="68" y="117.66666666666663" width="278" height="105.99999999999997"/>
+                                <rect key="frame" x="68" y="117.66666666666666" width="278" height="105.99999999999997"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="278" id="lPS-TD-ybz"/>
                                     <constraint firstAttribute="height" constant="106" id="y3s-83-rrf"/>
@@ -194,13 +199,13 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v7-3d-U7p">
-                                <rect key="frame" x="36" y="20" width="248" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v7-3d-U7p">
+                                <rect key="frame" x="83" y="148.66666666666666" width="248" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="248" id="Bmm-OQ-vvt"/>
                                     <constraint firstAttribute="height" constant="44" id="CD2-GG-uYn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="SantasSleighFull" family="Santa'sSleighFull" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
