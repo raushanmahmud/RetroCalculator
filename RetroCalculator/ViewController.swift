@@ -53,9 +53,6 @@ class ViewController: UIViewController {
     @IBAction func numberPressed(sender: UIButton){
         playSound()
         
-        if runningNumber == "0" {
-            runningNumber = ""
-        }
         runningNumber! += "\(sender.tag)"
         outputLbl.text = runningNumber
         
@@ -97,7 +94,7 @@ class ViewController: UIViewController {
     
     func clear(){
         currentOperation = Operation.Empty
-        runningNumber = "0"
+        runningNumber = ""
         leftValStr = ""
         rightValStr = ""
         result = ""
@@ -112,7 +109,7 @@ class ViewController: UIViewController {
             if runningNumber != "" {
                 
                 rightValStr = runningNumber
-                runningNumber = "0"
+                runningNumber = ""
                 
                 if currentOperation == Operation.Multiply {
                     result = "\(Double(leftValStr)! * Double(rightValStr)!)"
@@ -140,7 +137,7 @@ class ViewController: UIViewController {
         } else {
             // This is the first time operator has been pressed
             leftValStr = runningNumber
-            runningNumber = "0"
+            runningNumber = ""
             currentOperation = operation
         }
     }
